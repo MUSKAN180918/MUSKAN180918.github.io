@@ -33,7 +33,4 @@ var swiper = new Swiper(".mySwiper", {
             }
         });
     });
-        // Add active class to the current link
-        link.classList.add("active");
-    }
-});
+    
