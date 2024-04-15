@@ -15,8 +15,8 @@
  #main {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
+scroll-snap-type: y mandatory;
 }
  #page1,
 #page2,
@@ -29,6 +29,7 @@
     flex-direction: column;
     align-items: center;
     background-color: black;
+    scroll-snap-align: start;
 }
 
  
@@ -313,7 +314,7 @@
  }
  #page5 h1:hover{
     cursor: context-menu;
-    color: black;
+    color: greenyellow;
  }
  
 #img {
@@ -393,5 +394,6 @@
         #page2 h1{
             padding-top: 35%;
         }
+       
 }
 
