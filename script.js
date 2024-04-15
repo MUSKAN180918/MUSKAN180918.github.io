@@ -22,18 +22,19 @@ var swiper = new Swiper(".mySwiper", {
 });
  
 
-function smoothScrollTo(targetElement) {
-    targetElement.scrollIntoView({ behavior: 'smooth' });
+function smoothScrollTo(element) {
+    element.scrollIntoView({ behavior: 'smooth' });
 }
 const links = document.querySelectorAll("#nav-1 h4 a");
 
 links.forEach(link => {
     link.addEventListener("click", function(event) {
         event.preventDefault();
-        const targetId = this.getAttribute("href");
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            smoothScrollTo(targetElement);
+        const id = this.getAttribute("href");
+        const target = document.querySelector(id);
+        if (target) {
+            smoothScrollTo(target);
         }
     });
 });
+
