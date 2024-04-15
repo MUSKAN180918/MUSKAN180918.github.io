@@ -21,13 +21,10 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
  
-    // Function to update active link based on scroll position
-// Smooth scrolling function
+
 function smoothScrollTo(targetElement) {
     targetElement.scrollIntoView({ behavior: 'smooth' });
 }
-
-// Add smooth scroll behavior to navigation links
 const links = document.querySelectorAll("#nav-1 h4 a");
 
 links.forEach(link => {
